@@ -1,0 +1,29 @@
+.animated-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 120%;
+  background-color: #030712;
+  animation: animateText 4s steps(30) infinite;
+}
+
+.animated-text.with-blink:before {
+  animation: animateText 4s steps(12) infinite;
+  border-left: 2px solid rgb(34 211 238);
+}
+
+@keyframes animateText {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  90% {
+    left: 0%;
+  }
+}
+
+.glow:hover {
+  text-shadow: 0 0 15px rgb(24, 164, 185);
+}
