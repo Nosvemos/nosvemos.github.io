@@ -1,10 +1,32 @@
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #22d3ee #030712;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #030712;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #22d3ee;
+    border: 0px solid #ffffff;
+  }
+  main{
+    overflow-x: hidden;
+  }
+
 .animated-text:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  width: 120%;
+  width: 100%;
   background-color: #030712;
   animation: animateText 4s steps(30) infinite;
 }
